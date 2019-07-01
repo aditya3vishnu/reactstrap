@@ -46,7 +46,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.1", "@babel/core@^7.2.2":
+"@babel/core@^7.0.1", "@babel/core@^7.2.2", "@babel/core@^7.4.5":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.4.5.tgz#081f97e8ffca65a9b4b0fdc7e274e703f000c06a"
   integrity sha512-OvjIh6aqXtlsA8ujtGKfC7LYWksYSX8yQcM8Ay3LuvVeQ63lcOKgoZWVqcpFwkd29aYU9rVx7jxhfhiEDV9MZA==
@@ -383,6 +383,13 @@
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.0.0.tgz#6dfb7d8b6c3be14ce952962f658f3b7eb54c33ee"
   integrity sha512-Gt9xNyRrCHCiyX/ZxDGOcBnlJl0I3IWicpZRC4CdC0P5a/I07Ya2OAMEBU+J7GmRFVmIetqEYRko6QYRuKOESw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-syntax-dynamic-import@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.2.0.tgz#69c159ffaf4998122161ad8ebc5e6d1f55df8612"
+  integrity sha512-mVxuJ0YroI/h/tbFTPGZR8cv6ai+STMKNBq0f8hFxsxWjl94qqhsb+wXbpNMDPU3cfR1TIsVFzU3nXyZMqyK4w==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
@@ -964,10 +971,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@comandeer/babel-plugin-banner@^4.0.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@comandeer/babel-plugin-banner/-/babel-plugin-banner-4.1.0.tgz#5f9f22f3ba5a4e87d0c972c402f039c6eeffc079"
-  integrity sha512-9hKVIN2+maygxkngnXDsZXRZqCYDY4pxIRljJqqJ5A+eJZzW3k/NZj5lixEmStjWFjlPlOHGYBytBehpf0l+hA==
+"@comandeer/babel-plugin-banner@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@comandeer/babel-plugin-banner/-/babel-plugin-banner-5.0.0.tgz#30969cb08e810b67810d41761d0cfac292231ea9"
+  integrity sha512-sR9Go0U6puXoXyW9UgIiIQhRcJ8jVOvGl4BptUiXAtheMs72WcakZ1udh6J0ZOivr3o8jAM+MTCHLP8FZMbVpQ==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
@@ -10721,15 +10728,16 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-babel-minify@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-babel-minify/-/rollup-plugin-babel-minify-6.2.0.tgz#d101fa6c1ff79c67b2af91632a87284bf1bd7f8b"
-  integrity sha512-Ahil4nyB97OSoMTqm8qDyuL8e3NU1juDDdTC3Tuy00DvCLJmuX7OVrfEhGVJtguh/D1aO2t/2pe59/dzT/k4mw==
+rollup-plugin-babel-minify@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-babel-minify/-/rollup-plugin-babel-minify-9.0.0.tgz#50acb32ecf45d234043753f29df16149e678fb53"
+  integrity sha512-5aJVWpuoZUbQrIaRF7Jvjo7bBnYqaChOhrhsGtz72wJ3lyo7ygIL85hsuPkvrk/3Fj5AUlNZV3IaSZ98fHyoTw==
   dependencies:
-    "@babel/core" "^7.0.0"
-    "@comandeer/babel-plugin-banner" "^4.0.0"
+    "@babel/core" "^7.4.5"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@comandeer/babel-plugin-banner" "^5.0.0"
     babel-preset-minify "^0.5.0"
-    sourcemap-codec "^1.4.3"
+    sourcemap-codec "^1.4.4"
 
 rollup-plugin-babel@^4.2.0:
   version "4.3.2"
@@ -11244,7 +11252,7 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sourcemap-codec@^1.4.3, sourcemap-codec@^1.4.4:
+sourcemap-codec@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.4.tgz#c63ea927c029dd6bd9a2b7fa03b3fec02ad56e9f"
   integrity sha512-CYAPYdBu34781kLHkaW3m6b/uUSyMOC2R61gcYMWooeuaGtjof86ZA/8T+qVPPt7np1085CR9hmMGrySwEc8Xg==
